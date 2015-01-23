@@ -1,6 +1,6 @@
 from random import randint
 
-random_number = randint(1, 99999999999999999999999999999999999999999999)
+random_number = randint(0, 99999999999999999999999999999999999999999999)
 
 def numberwang(random_number):
 
@@ -9,6 +9,7 @@ def numberwang(random_number):
 	while guesses_left > 0:
 		guess = int(raw_input("Lets play Numberwang! Numberwang? "))
 		guesses_left = guesses_left - 1
+		random_number = randint(0, 99999999999999999999999999999999999999999999)
 
 		if guess == random_number:
 			print "Thats Numberwang!"
